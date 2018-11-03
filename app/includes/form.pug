@@ -1,0 +1,19 @@
+form.contacts-form
+  .form-group
+    label.control-label First name:
+    input.form-control(name="first_name" type="text")
+
+  .form-group
+    label.control-label Last name:
+    input.form-control(name="last_name" type="text")
+
+  .form-group
+    label.control-label Email:
+    input.form-control(name="phone" type="text")
+
+  .form-group.form-group--actions
+    input.js-cancel-changes.btn.btn-default(type="button" value="Cancel")
+
+    input.js-add-contact.btn.btn-primary(type="submit" value="Save")
+
+  input(name="id_entry" type="hidden" value="0")
