@@ -1,0 +1,30 @@
+// Colors
+$white: #fff;
+$gray-100: #f6f6f6;
+$gray-200: #e6e6e6;
+$gray-300: #ccc;
+$gray-400: #bbb;
+$gray-500: #999;
+$gray-600: #888;
+$gray-700: #666;
+$gray-800: #333;
+$gray-900: #222;
+$black: #000;
+
+$green: #7ed321;
+
+// Base
+$font-family-base: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$font-size-base: 16px;
+$font-weight-base: normal;
+$line-height-base: 1.4;
+$body-color: $gray-800;
+$body-bg: $gray-100;
+
+// Screens
+$screen-md-max: 1200px;
+$screen-lg-min: 992px;
+$screen-md-max: 991px;
+$screen-md-min: 768px;
+$screen-sm-max: 767px;
+$screen-sm-min: 576px;

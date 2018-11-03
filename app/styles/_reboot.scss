@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left;
+  background-color: $body-bg;
+}
+
+.container {
+  padding: 20px;
+}
+
+
+a {
+  display: inline-block;
+  color: $green;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
