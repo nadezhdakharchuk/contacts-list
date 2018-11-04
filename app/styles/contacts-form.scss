@@ -24,41 +24,7 @@
   height: 35px;
   padding: 5px 10px;
   color: $gray-700;
-  background-color: #fff;
-  background-clip: $gray-500;
+  background-color: $white;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 5px 15px;
-  font-weight: bold;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  color: $white;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 15px;
-
-  &:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: 0 0 3px 0 rgba($green, .3);
-  }
-
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-  }
-}
-
-.btn-primary {
-  background-color: $green;
-}
-
-.btn-default {
-  background-color: $gray-600;
 }

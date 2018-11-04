@@ -12,7 +12,36 @@
     display: block;
   }
 
-  &__row {
+  thead {
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+
+  th {
+    display: table-cell;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba($gray-700, 0.3);
+    background-color: $gray-600;
+    color: $white;
+    text-align: left;
+    vertical-align: bottom;
+    font-weight: normal;
+  }
+
+  td {
+    @media (min-width: $screen-md-min) {
+      display: table-cell;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+    }
+  }
+
+  tr {
     display: table-row;
     width: 100%;
 
@@ -20,49 +49,45 @@
       position: relative;
       display: block;
       margin-bottom: 15px;
+      padding: 10px 150px 0 0;
+      border-top: solid 1px $gray-200;
     }
 
-    &--head {
-      padding-top: 0;
-      border-bottom: 1px solid rgba($gray-300, .3);
-      background-color: $gray-200;
-
-      @media (max-width: $screen-sm-max) {
-        display: none;
+    &:nth-child(odd) td {
+      @media (min-width: $screen-md-min) {
+        background-color: $gray-200;
       }
     }
   }
 
-  &__column {
-    display: table-cell;
-    padding: 10px;
-    vertical-align: top;
+  .right {
+    @media (min-width: $screen-md-min) {
+      text-align: right;
+    }
+  }
+
+  .actions {
+    @media (min-width: $screen-md-min) {
+      text-align: right;
+    }
 
     @media (max-width: $screen-sm-max) {
-      display: block;
-      padding: 0;
-    }
-
-    &--right {
-      @media (min-width: $screen-md-min) {
-        text-align: right;
-      }
+      position: absolute;
+      top: 15px;
+      right: 0;
     }
   }
 
-  &__caption {
-    display: table-cell;
-    padding: 5px 10px;
-    text-align: left;
-    vertical-align: bottom;
-    font-weight: normal;
-  }
-
-  &__label {
+  span {
     display: none;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 13px;
     font-weight: bold;
+    text-transform: capitalize;
+
+    &::after {
+      content: ":";
+    }
 
     @media (max-width: $screen-sm-max) {
       display: inline-block;

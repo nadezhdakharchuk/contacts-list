@@ -17,10 +17,9 @@ body {
 
 .container {
   max-width: 700px;
-  margin :auto;
+  margin: auto;
   padding: 20px;
 }
-
 
 a {
   display: inline-block;
@@ -28,9 +27,5 @@ a {
 
   &:hover {
     text-decoration: none;
-  }
-
-  &:not(:last-child) {
-    margin-right: 10px;
   }
 }
